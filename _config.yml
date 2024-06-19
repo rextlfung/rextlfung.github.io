@@ -7,13 +7,13 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Rodrigo A. Lobos"
+title                    : "Rex Fung"
 title_separator          : "-"
-name                     : &name "Rodrigo A. Lobos"
+name                     : &name "Rex Tin Long Fung"
 description              : &description "personal description"
-url                      : https://ralobos.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+url                      : https://rextlfung.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
-repository               : "ralobos.github.io"
+repository               : "rextlfung.github.io"
 teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
 breadcrumbs              : false # true, false (default)
 words_per_minute         : 160
@@ -80,15 +80,15 @@ analytics:
 
 # Site Author
 author:
-  name             : "Rodrigo A. Lobos"
-  avatar           : "pic_rl_scaled579.jpg"
-  bio              : "Postdoctoral Researcher at University of Michigan <b>rlobos@umich.edu </b>"
+  name             : "Rex Tin Long Fung"
+  avatar           : "meRoom.jpg"
+  bio              : "PhD Student at University of Michigan <b>rexfung@umich.edu </b>"
   location         : "Ann Arbor, MI"
   employer         :
   pubmed           :
-  googlescholar    : "https://scholar.google.com/citations?user=J7WSE60AAAAJ&hl=en&oi=ao"
-  email            : #"rlobos@usc.edu"
-  researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
+  googlescholar    : "https://scholar.google.com/citations?user=oyHbtroAAAAJ"
+  email            : "rexfung@umich.edu"
+  researchgate     :
   uri              :
   bitbucket        :
   codepen          :
