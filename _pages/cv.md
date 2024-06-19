@@ -1,4 +1,4 @@
-  ---
+---
 layout: archive
 title: "Curriculum Vitae (CV)"
 permalink: /cv/
