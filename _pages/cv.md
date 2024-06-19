@@ -1,6 +1,6 @@
 ---
 layout: archive
-title: "CV"
+title: "Curriculum Vitae (CV)"
 permalink: /cv/
 author_profile: true
 redirect_from:
@@ -9,4 +9,4 @@ redirect_from:
 
 {% include base_path %}
 
-[CV](https://rextlfung.github.io/rmi/files/rexfungCVspring2024.pdf)
+[Curriculum Vitae](https://rextlfung.github.io/rmi/files/rexfungCVspring2024.pdf)
