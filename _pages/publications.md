@@ -27,6 +27,6 @@ bioRxiv, 2022-03.
 [High-Accuracy Ultra-short Inner-Volume Saturation Pulse for 3D Steady-State Imaging] <br>
 International Society for Magnetic Resonance in Medicine Annual Meeting & Exhibition, 2024, Abstract #3249
 
-* Scott Peltier, Maximillian Egan, Rex Fung, Qingping Chen, Maxim Zaitsev, Jon-Fredrik Nielsen. <br>
+* Scott Peltier, Maximillian Egan, <b>Rex Fung</b>, Qingping Chen, Maxim Zaitsev, Jon-Fredrik Nielsen. <br>
 [Harmonization of an SMS-EPI fMRI protocol using Pulseq: Sequence implementation and ABCD QC metrics](https://ww6.aievolution.com/hbm2401/index.cfm?do=abs.viewAbs&abs=3804) <br>
 Organization for Human Brain Mapping Annual Meeting, 2024, Abstract #3804
