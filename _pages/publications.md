@@ -12,7 +12,7 @@ author_profile: true
 Organization for Human Brain Mapping Annual Meeting, 2024, Abstract #3804
 
 * Yongli He, <b>Rex Fung</b>, Jon-Fredrik Nielsen. <br>
-[High-Accuracy Ultra-short Inner-Volume Saturation Pulse for 3D Steady-State Imaging] <br>
+High-Accuracy Ultra-short Inner-Volume Saturation Pulse for 3D Steady-State Imaging <br>
 International Society for Magnetic Resonance in Medicine Annual Meeting & Exhibition, 2024, Abstract #3249
 
 <b>Journal Articles</b>
