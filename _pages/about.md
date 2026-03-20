@@ -8,6 +8,6 @@ redirect_from:
   - /about.html
 ---
 
-[Curriculum Vitae (CV)](https://rextlfung.github.io/files/rexFungCVf24.pdf)
+[Résumé](https://rextlfung.github.io/files/rexFungResumeMar26.pdf)
 
-I'm a PhD student advised by Dr. Jon-Fredrik Nielsen and Prof. Douglas Noll at the University of Michigan. My research interests are in magnetic resonance imaging (MRI) acceleration methods. My current project is on optimizing sampling and reconstruction of brainstem fMRI. Outside of research, I am an avid volleyball player.
+I'm a Ph.D. candidate advised by Dr. Jon-Fredrik Nielsen and Dr. Douglas Noll at the University of Michigan, Ann Arbor. My research is on random sampling and iterative image reconstruction methods for MRI. Outside of school, I'm passionate about sports and am an avid volleyball player and indoor boulderer.
