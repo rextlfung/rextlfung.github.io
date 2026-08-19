@@ -9,4 +9,4 @@ redirect_from:
 
 {% include base_path %}
 
-[Curriculum Vitae (CV)](https://rextlfung.github.io/files/resume.pdf)
+[Curriculum Vitae (CV)](https://rextlfung.github.io/resume/build/resume.pdf)

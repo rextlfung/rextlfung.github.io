@@ -1,0 +1,328 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Medium Length Professional CV
+% LaTeX Template
+% Version 2.0 (8/5/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Trey Hunner (http://www.treyhunner.com/)
+%
+% Important note:
+% This template requires the resume.cls file to be in the same directory as the
+% .tex file. The resume.cls file provides the resume style used for structuring the
+% document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass{resume} % Use the custom resume.cls style
+
+\usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry} % Document margins
+\usepackage[hidelinks]{hyperref}
+\usepackage{color}
+\usepackage{mathptmx} % change font close to Times New Roman
+
+\name{Rex Tin Long Fung} % Your name
+%\address{University of Michigan, Ann Arbor}
+%\address{540 Thompson St}
+%\address{Ann Arbor, MI, 48104}
+%\address{Personal Phone: +1 (734) 340-8022} % Your phone number and email
+\address{E-mail: rexfung@umich.edu}
+\address{Website: \href{https://rextlfung.github.io/}{https://rextlfung.github.io}}
+
+\makeatletter
+\newcommand{\printheader}{
+  \printname
+  \@ifundefined{@addressone}{}{\printaddress{\@addressone}}
+  \@ifundefined{@addresstwo}{}{\printaddress{\@addresstwo}}
+  \@ifundefined{@addressthree}{}{\printaddress{\@addressthree}}
+}
+\makeatother
+
+\begin{document}	
+%----------------------------------------------------------------------------------------
+%	Education
+%----------------------------------------------------------------------------------------
+\begin{rSection}{Education}
+\begin{rSubsection}{University of Michigan}{, Ann Arbor, MI \hfill {Sep 2022 - Present}}
+	PhD Candidate specializing in MRI sequence programming and iterative reconstruction methods, with applications to accelerating functional MRI.
+\end{rSubsection}
+\begin{rSubsection}{University of Michigan}{, Ann Arbor, MI \hfill {Sep 2022 - Aug 2024}}
+	\item \textbf{Program}: M.S., Biomedical Engineering (Imaging and Ultrasonics) \hfill{\textbf{GPA}: 3.65/4.00}
+    \item{\textbf{Relevant Coursework}: Linear Algebra, Optimization, Probability, Machine Learning, Image Processing, Medical Imaging Systems}
+\end{rSubsection}
+\begin{rSubsection}{University of Michigan}{, Ann Arbor, MI \hfill {Sep 2018 - May 2022}}
+	\item{\textbf{Program}: B.S., Neuroscience major, Electrical Engineering minor} \hfill{\textbf{GPA}: 3.78/4.00}
+    \item{\textbf{Relevant Coursework}: Digital Signal Processing, Electrical Biophysics, Embedded Control Systems, Sensing and ML for Neural Interfaces}
+\end{rSubsection}
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	Research Experience
+%----------------------------------------------------------------------------------------
+\begin{rSection}{Research Experience}
+    \begin{rSubsection}{Functional MRI Lab}{, University of Michigan \hfill {Sep 2022 - Present}}
+    	\item {Graduate Student Research Assistant \hfill \textit{Advisors: Dr. Jon-Fredrik Nielsen, Dr. Douglas Noll}}
+    	\begin{rSubsubsection}
+            \item Accelerated fMRI data acquisition by $6\times$ by developing a novel 3D-EPI sequence with Poisson-disc random sampling, increasing resolution for functional neuroimaging studies.
+            \item Simultaneously reconstructed 100 GB+ fMRI datasets on HPCs using a custom 4D iterative optimization algorithm written in Julia, which models low-rank signal structures on multiple scales to improve accuracy of functional activation maps.
+            \item Standardized cross-vendor research for 7+ international institutions (e.g., Harvard, Freiburg) by developing open-source Pulseq sequences, facilitating seamless, hardware-agnostic protocol sharing.
+            \item Co-authored 1 journal article and 3 conference posters at top-tier venues (e.g. IEEE, ISMRM), translating complex sequence design and reconstruction findings for the global imaging community.
+    	\end{rSubsubsection}
+	\end{rSubsection}
+
+    \begin{rSubsection}{Bo Duan Lab}{, University of Michigan \hfill {Jul 2020 - May 2022}}
+	\item {Undergraduate Research Assistant \hfill \textit{Advisor: Dr. Bo Duan}}
+	\begin{rSubsubsection}
+        \item Reduced manual data processing time by 90\% by using OpenCV to automate behavioral tracking in 30+ hours of footage and cell-counting for 200+ microscopy images.
+	\end{rSubsubsection}
+    \end{rSubsection}
+% ------------------------------------------------------------------------------------------------
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	Teaching Experience
+%---------------------------------------------------------------------------------------
+\begin{rSection}{Teaching Experience}
+    \begin{rSubsection}{BME/ECE 516 Medical Imaging Systems}{, University of Michigan \hfill {Sep 2024 - Dec 2024}}
+        \item[$\bullet$] Mentored 20-30 students to learn Medical Imaging Systems e.g. MRI, ultrasound, by guiding them through homework problems during weekly office hours and via Piazza, an online Q\&A forum.
+        \item[$\bullet$] Streamlined course logistics for 15 weeks by releasing and grading homework assignments + final exam on Canvas, an online site for the class.
+    \end{rSubsection}
+\end{rSection}
+
+\clearpage
+\printheader
+
+%----------------------------------------------------------------------------------------
+%	Skills
+%---------------------------------------------------------------------------------------
+\begin{rSection}{Skills}
+    \textbf{Math}: Inverse Problems, Optimization, Transform Domains, Machine Learning\\
+    \textbf{Programming}: Julia, Python, MATLAB, GPU programming, Jupyter Notebooks, LaTeX, Git/GitHub\\
+    \textbf{Science}: Experimental Design, Oral Presentation, Academic Writing\\
+    \textbf{Languages}: Cantonese, Mandarin Chinese, Japanese\\
+    \textbf{Sports}: Volleyball, Bouldering, Badminton, Pickleball, Table Tennis, Basketball, Triathlon\\
+    \textbf{Digital Media Production}: Adobe Premiere Pro/Rush, Audacity, Edits
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	Journal Publications
+%---------------------------------------------------------------------------------------
+\begin{rSection}{Journal Publications}
+	\begin{rJournal}
+	\item R.A. Lobos, X. Wang, \textbf{R.T.L. Fung}, Y. He, D. Frey, D. Gupta, Z. Liu, J.A. Fessler, D.C. Noll.
+    "Spatiotemporal Maps for Dynamic MRI Reconstruction.",
+    \textit{IEEE Transactions on Computational Imaging} (2026). 
+    \href{https://doi.org/10.1109/tci.2026.3657289/mm1}{\underline{DOI}}.
+    
+    \item H. Lee, C.C. Hor, L.R. Horwitz, A. Xiong, X.Y. Su, D.R. Soden, S. Yang, W. Cai, W. Zhang, C. Li, C. Radcliff, A. Dinh, \textbf{T.L.R. Fung}, I. Rovcanin, K.P. Pipe, X.Z.S. Xu, B. Duan.
+    "A dedicated skin-to-brain circuit for cool sensation in mice.",
+    \textit{Nature Communications} (2025). 
+    \href{https://doi.org/10.1038/s41467-025-61562-y}{\underline{DOI}}.
+	\end{rJournal}
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	Conference Posters
+%---------------------------------------------------------------------------------------
+\begin{rSection}{Conference Posters}
+\begin{rConference}	
+    \item \textbf{R.T.L. Fung}, R.A. Lobos, J.A. Fessler, D.C. Noll, J.-F. Nielsen.
+    "\href{https://archive.ismrm.org/2025/3196.html}{Sub 2 mm resolution fMRI at 3T using randomly undersampled 3D-EPI with locally low-rank + temporally sparse reconstruction}"
+    \textit{International Society for Magnetic Resonance in Medicine Annual Meeting}, 2025. Digital poster \#3196.
+
+    \item S. Peltier, M. Egan, \textbf{R. Fung}, Q. Chen, M. Zaitsev, J.-F. Nielsen.
+    "Harmonization of an SMS-EPI fMRI protocol using Pulseq: Sequence implementation and ABCD QC metrics."
+    \textit{Organization for Human Brain Mapping Annual Meeting}, 2024. Digital poster \#3804.
+    
+    \item Y. He, \textbf{R. Fung}, J.-F. Nielsen.
+    "\href{https://archive.ismrm.org/2024/3249.html}{High-Accuracy Ultra-short Inner-Volume Saturation Pulse for 3D Steady-State Imaging.}"
+    \textit{International Society for Magnetic Resonance in Medicine Annual Meeting}, 2024. Digital poster \#3249.
+\end{rConference}	
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	Honors and Awards
+%---------------------------------------------------------------------------------------
+\begin{rSection}{Honors and Awards}
+	\begin{rSubsection}{James B. Angell Scholar}{, University of Michigan \hfill Mar 2021}
+        \item \textit{Students who achieve an “A” record (all grades of A+, A, or A-) for two or more consecutive terms}
+	\end{rSubsection}
+\end{rSection}
+
+\end{document}
+
+%----------------------------------------------------------------------------------------
+%	Invited Talks
+%---------------------------------------------------------------------------------------
+% \begin{rSection}{Invited Talks}
+	
+% 	\begin{rITalk}
+	
+% 		\item{\bf Accelerated MRI Reconstruction Using LORAKS: Leveraging k-space Linear Predictability and Structured Low-rank Modeling to Predict Missing Samples}
+% 		\begin{rSubsubsection}
+% 			\item ISMRM Workshop on MRI Acquisition \& Reconstruction, Virtual Event, September, 2021 
+% 		\end{rSubsubsection}	
+	
+% 		\item{\bf Low-Rank Modeling of Local Sinogram Neighborhoods with Tomographic Applications}
+% 		\begin{rSubsubsection}
+% 			\item Asilomar Conference on Signals, Systems, and Computers, Pacific Grove, CA, , November, 2019 
+% 		\end{rSubsubsection}	
+		
+% 		\item{\bf Achievability of the Cram\'er-Rao Lower Bound in Astrometry}
+% 		\begin{rSubsubsection}
+% 			\item Dynamical Astronomy in Latin-America (ADELA), Santiago,  Chile, September, 2014 
+% 		\end{rSubsubsection}	
+		
+		
+					
+% 	\end{rITalk}
+	
+% \end{rSection}
+
+% %----------------------------------------------------------------------------------------
+% %	Talks
+% %---------------------------------------------------------------------------------------
+% \begin{rSection}{Talks}
+	
+% 	\begin{rTalk}
+	
+% 		\item {\bf Autoregression and Structured Low-rank Modeling of Sinograms}
+% 		\begin{rSubsubsection}
+% 			\item IEEE ISBI, Iowa City, IA, April, 2020
+% 		\end{rSubsubsection}
+		
+% 		\item {\bf Robust Autocalibrated LORAKS for EPI Ghost Correction}
+% 		\begin{rSubsubsection}
+% 			\item IEEE ISBI, Washington, D.C., April, 2018
+% 		\end{rSubsubsection}
+		
+					
+% 	\end{rTalk}
+	
+% \end{rSection}
+
+% %----------------------------------------------------------------------------------------
+% %	Teaching Experience
+% %----------------------------------------------------------------------------------------
+% \begin{rSection}{Teaching Experience}
+	
+% 	\begin{rSubsection}{University of Southern California}{, Los Angeles, CA}
+% 		\item Teaching Assistant
+% 				\begin{rSubsubsection}
+% 					\item EE141: 
+% Applied Linear Algebra for Engineering \hfill Fall 2022
+% 			\begin{rSubsubsection}					
+% 				\item[-]Instructor of weekly discussion sessions
+% 				\item[-] Holding office hours
+% 			\end{rSubsubsection}
+% 		\end{rSubsubsection}
+% 		%
+% %\clearpage
+% %
+% 						\begin{rSubsubsection}
+% 					\item EE588: 
+% Optimization for the Information and Data Sciences \hfill Fall 2021
+% 			\begin{rSubsubsection}					
+% 				\item[-]Instructor of weekly discussion sessions
+% 				\item[-] Preparation of homework solutions
+% 				\item[-] Holding office hours
+% 			\end{rSubsubsection}
+% 		\end{rSubsubsection}
+% 				\begin{rSubsubsection}
+% 					\item EE503: 
+% Probability for Electrical and Computer Engineers \hfill Spring 2021
+% 			\begin{rSubsubsection}					
+% 				\item[-]Instructor of weekly discussion sessions
+% 				\item[-] Preparation of homework solutions
+% 				\item[-] Holding office hours
+% 			\end{rSubsubsection}
+% 		\end{rSubsubsection}
+% 		\begin{rSubsubsection}
+% 					\item EE141: 
+% Applied Linear Algebra for Engineering \hfill Fall 2020
+% 			\begin{rSubsubsection}					
+% 				\item[-]Instructor of weekly discussion sessions
+% 				\item[-] Holding office hours
+% 			\end{rSubsubsection}
+% 		\end{rSubsubsection}
+% 		\begin{rSubsubsection}
+% 			\item EE483: Introduction to Digital Signal Processing \hfill Spring 2020
+% 			\begin{rSubsubsection}					
+% 				\item[-]Instructor of weekly discussion sessions
+% 				\item[-] Holding office hours
+% 			\end{rSubsubsection}
+% 		\end{rSubsubsection}
+% 		\begin{rSubsubsection}
+% 			\item EE483: Introduction to Digital Signal Processing \hfill Fall 2019
+% 			\begin{rSubsubsection}					
+% 				\item[-] Preparation of homework solutions 
+% 				\item[-] Holding office hours
+% 			\end{rSubsubsection}
+% 		\end{rSubsubsection}
+% 	\end{rSubsection}
+	
+% %	\clearpage
+	
+% 	\begin{rSubsection}{Universidad de Chile}{, Santiago, Chile}
+% 		\item Teaching Assistant
+% 		\begin{rSubsubsection}
+% 			\item EL7024: Information Theory \hfill Spring 2014	
+% 			\begin{rSubsubsection}						
+% 				\item[-] Guiding term projects, grading assignments, and holding office hours
+% 			\end{rSubsubsection}
+% 			\item EL3005:  Signals and Systems I \hfill Fall 2013
+% 			\begin{rSubsubsection}					
+% 				\item[-] Guiding term projects, grading assignments, and holding office hours
+% 			\end{rSubsubsection}	
+% 			\item EL4003:  Signals and Systems II (Estimation and Detection Theory) \hfill Spring 2013
+% 			\begin{rSubsubsection}					
+% 				\item[-] Guiding term projects, grading assignments, and holding office hours
+% 			\end{rSubsubsection}	
+% 		\end{rSubsubsection}
+% 	\end{rSubsection}
+% \end{rSection}
+% %
+% %\clearpage
+% %
+% \begin{rSection}{Professional Services}	
+	
+% 	{\bf Reviewer}
+% 	\begin{rSubsection}{}{}
+% 		\item{Journals}
+% 		\begin{rSubsubsection}
+% 		\item[$\bullet$] IEEE Transactions on Medical Imaging 
+% 		\item[$\bullet$] IEEE Transactions on Computational Imaging
+% 		\item[$\bullet$] IEEE Reviews in Biomedical Engineering
+% 		\item[$\bullet$] Magnetic Resonance in Medicine
+% 		\item[$\bullet$] SIAM Journal on Imaging Sciences
+% 		\end{rSubsubsection}	
+% 		\item{Conferences}
+% 		\begin{rSubsubsection}
+% 		\item[$\bullet$] IEEE International Symposium on Biomedical Imaging (ISBI)
+% 		\end{rSubsubsection}
+		
+% 	\end{rSubsection}
+	
+% \end{rSection}
+
+% %\clearpage
+
+% \begin{rSection}{Memberships}
+% 	\begin{rSubsection}{}{}
+% 		\item[$\bullet$] ISMRM trainee member
+% 		\item[$\bullet$] IEEE  member
+% 		\item[$\bullet$] IEEE Signal Processing Society student member
+% 	\end{rSubsection}	
+% \end{rSection}
+
+% \begin{rSection}{Specializations}
+% 	\begin{rSubsection}{}{}
+% 		\item[$\bullet$] Coursera Deep Learning Specialization  \hfill Spring 2021
+% 	\end{rSubsection}	
+% \end{rSection}

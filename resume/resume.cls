@@ -1,0 +1,246 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Medium Length Professional CV - RESUME CLASS FILE
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% This class file defines the structure and design of the template. 
+%
+% Original header:
+% Copyright (C) 2010 by Trey Hunner
+%
+% Copying and distribution of this file, with or without modification,
+% are permitted in any medium without royalty provided the copyright
+% notice and this notice are preserved. This file is offered as-is,
+% without any warranty.
+%
+% Created by Trey Hunner and modified by www.LaTeXTemplates.com
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\ProvidesClass{resume}[2010/07/10 v0.9 Resume class]
+
+\LoadClass[11pt,letterpaper]{article} % Font size and paper type
+
+\usepackage[parfill]{parskip} % Remove paragraph indentation
+\usepackage{array} % Required for boldface (\bf and \bfseries) tabular columns
+\usepackage{ifthen} % Required for ifthenelse statements
+\usepackage[hidelinks]{hyperref}
+\hypersetup{
+	colorlinks,
+	citecolor=green,
+	filecolor=black,
+	linkcolor=black,
+	urlcolor=black
+}
+\hypersetup{linktocpage}
+\usepackage{color}
+\usepackage{tikz}
+\usepackage{enumitem}%[label= {[C\arabic*]}]
+
+\usepackage{etaremune}
+
+
+% Use to draw horizontal line with specific thickness
+\def\vhrulefill#1{\leavevmode\leaders\hrule\@height#1\hfill \kern\z@}
+%\def\vhrulefill#1{\leavevmode\leaders\hrule\@height#1\hfill \kern\z@}
+
+
+\newcommand{\ExternalLink}{%
+	\color{blue}
+	\tikz[x=1.2ex, y=1.2ex, baseline=-0.05ex]{% 
+		\begin{scope}[x=1ex, y=1ex]
+
+			\clip (-0.1,-0.1) 
+			--++ (-0, 1.2) 
+			--++ (0.6, 0) 
+			--++ (0, -0.6) 
+			--++ (0.6, 0) 
+			--++ (0, -1);
+			\path[draw, 
+			line width = 0.5, 
+			rounded corners=0.5] 
+			(0,0) rectangle (1,1);
+		\end{scope}
+		\path[draw, line width = 0.5] (0.5, 0.5) 
+		-- (1, 1);
+		\path[draw, line width = 0.5] (0.6, 1) 
+		-- (1, 1) -- (1, 0.6);
+	}
+}
+
+\pagenumbering{arabic}
+%----------------------------------------------------------------------------------------
+%	HEADINGS COMMANDS: Commands for printing name and address
+%----------------------------------------------------------------------------------------
+
+\def \name#1{\def\@name{#1}} % Defines the \name command to set name
+\def \@name {} % Sets \@name to empty by default
+
+\def \addressSep {$\diamond$} % Set default address separator to a diamond
+
+% One, two or three address lines can be specified 
+\let \@addressone \relax
+\let \@addresstwo \relax
+\let \@addressthree \relax
+
+% \address command can be used to set the first, second, and third address (last 2 optional)
+\def \address #1{
+  \@ifundefined{@addresstwo}{
+    \def \@addresstwo {#1}
+  }{
+  \@ifundefined{@addressthree}{
+  \def \@addressthree {#1}
+  }{
+     \def \@addressone {#1}
+  }}
+}
+
+% \printaddress is used to style an address line (given as input)
+\def \printaddress #1{
+  \begingroup
+    \def \\ {\addressSep\ }
+    \centerline{#1}
+  \endgroup
+  \par
+  \addressskip
+}
+
+% \printname is used to print the name as a page header
+\def \printname {
+  \begingroup
+    \hfil{{\namesize\bf \@name}}\hfil
+    \nameskip\break
+  \endgroup
+}
+
+%----------------------------------------------------------------------------------------
+%	PRINT THE HEADING LINES
+%----------------------------------------------------------------------------------------
+
+\let\ori@document=\document
+\renewcommand{\document}{
+  \ori@document  % Begin document
+  \printname % Print the name specified with \name
+  \@ifundefined{@addressone}{}{ % Print the first address if specified
+    \printaddress{\@addressone}}
+  \@ifundefined{@addresstwo}{}{ % Print the second address if specified
+    \printaddress{\@addresstwo}}
+     \@ifundefined{@addressthree}{}{ % Print the third address if specified
+    \printaddress{\@addressthree}}
+}
+
+
+%
+%
+%
+
+
+%----------------------------------------------------------------------------------------
+%	SECTION FORMATTING
+%----------------------------------------------------------------------------------------
+
+% Defines the rSection environment for the large sections within the CV
+\newenvironment{rSection}[1]{ % 1 input argument - section name
+  \sectionskip
+  \MakeUppercase{\bf #1} % Section title
+  \sectionlineskip
+  \hrule % Horizontal line
+  \vspace{0.5em}
+  %\vhrulefill{0.9pt}
+  \begin{list}{}{ % List for each individual item in the section
+  		%\setlength{\leftmargin}{1.5em}  % Margin within the section
+  	}
+  	\item[]   	
+  }{
+  \end{list}
+}
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE FORMATTING
+%----------------------------------------------------------------------------------------
+
+\newenvironment{rSubsection}[2]{ 
+ {\bf#1}{#2} % Bold company name and date on the right
+  \begin{list}{}{\leftmargin=1.5em} % \cdot used for bullets, no indentation
+   \itemsep -0.5em \vspace{-0.5em} % Compress items in list together for aesthetics
+  }{
+  \end{list}
+}
+
+\newenvironment{rSubsubsection}{ 
+%	{#1}
+	\begin{list}{$\bullet$}{\leftmargin=1.5em} % \cdot used for bullets, no indentation
+		\itemsep -0.5em \vspace{-0.5em} % Compress items in list together for aesthetics
+	}{
+	\end{list}
+}
+
+\newenvironment{rJournal}{
+	\vspace{0.5em}
+	\setcounter{enumi}{0}
+	\renewcommand{\labelenumi}{[\theenumi]}
+	\begin{enumerate}{\leftmargin=1.5em} % \cdot used for bullets, no indentation
+		\itemsep -0.5em \vspace{-0.5em} % Compress items in list together for aesthetics
+	}{
+	\end{enumerate}
+}
+
+\newenvironment{rRevision}{
+	\vspace{0.5em}
+	\setcounter{enumi}{0}
+	\renewcommand{\labelenumi}{[R\theenumi]}
+	\begin{etaremune}{\leftmargin=1.5em} % \cdot used for bullets, no indentation
+		\itemsep -0.5em \vspace{-0.5em} % Compress items in list together for aesthetics
+	}{
+	\end{etaremune}
+}
+
+\newenvironment{rConference}{
+	 \vspace{0.5em}
+ 	\setcounter{enumi}{0}	 
+	\renewcommand{\labelenumi}{[\theenumi]}
+	\begin{enumerate}{\leftmargin=1.5em} % \cdot used for bullets, no indentation
+		\itemsep -0.5em \vspace{-0.5em} % Compress items in list together for aesthetics
+	}{
+	\end{enumerate}
+}
+
+
+\newenvironment{rTalk}{
+	\vspace{0.5em}
+	\setcounter{enumi}{0}
+	\renewcommand{\labelenumi}{[T\theenumi]}
+	\begin{etaremune}{\leftmargin=1.5em} % \cdot used for bullets, no indentation
+		\itemsep -0.5em \vspace{-0.5em} % Compress items in list together for aesthetics
+	}{
+	\end{etaremune}
+}
+
+\newenvironment{rITalk}{
+	\vspace{0.5em}
+	\setcounter{enumi}{0}
+	\renewcommand{\labelenumi}{[IT\theenumi]}
+	\begin{etaremune}{\leftmargin=1.5em} % \cdot used for bullets, no indentation
+		\itemsep -0.5em \vspace{-0.5em} % Compress items in list together for aesthetics
+	}{
+	\end{etaremune}
+}
+
+\newenvironment{rPreP}{
+	\vspace{0.5em}
+	\setcounter{enumi}{0}
+	\renewcommand{\labelenumi}{[PP\theenumi]}
+	\begin{etaremune}{\leftmargin=1.5em} % \cdot used for bullets, no indentation
+		\itemsep -0.5em \vspace{-0.5em} % Compress items in list together for aesthetics
+	}{
+	\end{etaremune}
+}
+
+
+% The below commands define the whitespace after certain things in the document - they can be \smallskip, \medskip or \bigskip
+\def\namesize{\huge} % Size of the name at the top of the document
+\def\addressskip{\smallskip} % The space between the two address (or phone/email) lines
+\def\sectionlineskip{\medskip} % The space above the horizontal line for each section 
+\def\nameskip{\bigskip} % The space after your name at the top
+\def\sectionskip{\medskip} % The space after the heading section

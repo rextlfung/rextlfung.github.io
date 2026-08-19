@@ -1,2 +1,4 @@
 _site/
+resume/build/*
+!resume/build/resume.pdf
 
