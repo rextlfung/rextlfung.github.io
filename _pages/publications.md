@@ -19,7 +19,7 @@ Nature Communications, 2025.
 ======
 * <b>R.T.L. Fung</b>, D.C. Noll, J.-F. Nielsen. <br>
 [ArbEPI: A Framework for Generating 3D-EPI Sequences from Arbitrary Sampling Patterns](https://rextlfung.github.io/posters/grc2026.pdf) <br>
-In Vivo Magnetic Resonance, Gordon Research Conferences, 2026, 20 minute talk and traditional poster.
+In Vivo Magnetic Resonance, Gordon Research Conferences, 2026. 20 minute talk and traditional poster.
 
 * <b>R.T.L. Fung</b>, R.A. Lobos, J.A. Fessler, D.C. Noll, J.-F. Nielsen. <br>
 [Sub 2 mm Resolution fMRI at 3T using Randomly Undersampled 3D-EPI with Locally Low-Rank + Temporally Sparse Reconstruction](https://archive.ismrm.org/2025/3196.html) <br>
