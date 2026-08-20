@@ -22,7 +22,7 @@ Nature Communications, 2025.
 International Society for Magnetic Resonance in Medicine Annual Meeting, 2025, Digital Poster #3196
 
 * Scott Peltier, Maximillian Egan, <b>Rex Fung</b>, Qingping Chen, Maxim Zaitsev, Jon-Fredrik Nielsen. <br>
-[Harmonization of an SMS-EPI fMRI protocol using Pulseq: Sequence implementation and ABCD QC metrics](https://ww6.aievolution.com/hbm2401/index.cfm?do=abs.viewAbs&abs=3804) <br>
+[Harmonization of an SMS-EPI fMRI protocol using Pulseq: Sequence implementation and ABCD QC metrics](https://rextlfung.github.io/posters/ohbm2024.pdf) <br>
 Organization for Human Brain Mapping Annual Meeting, 2024, Digital Poster #3804
 
 * Yongli He, <b>Rex Fung</b>, Jon-Fredrik Nielsen. <br>
