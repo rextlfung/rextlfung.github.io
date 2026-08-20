@@ -81,8 +81,8 @@ analytics:
 # Site Author
 author:
   name             : "Rex Tin Long Fung"
-  avatar           : "rexHawaii.jpg"
-  bio              : "PhD Candidate at University of Michigan <b>rexfung@umich.edu</b>"
+  avatar           : "rexHeadshot.jpg"
+  bio              : "5th year PhD Candidate at the University of Michigan"
   location         : "Ann Arbor, MI"
   employer         :
   pubmed           :
@@ -102,7 +102,7 @@ author:
   instagram        :
   impactstory      : #"https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
   lastfm           :
-  linkedin         : "rex-f-08094794/"
+  linkedin         : "rextlfung"
   orcid            : "https://orcid.org/0000-0003-1526-0203"
   pinterest        :
   soundcloud       :
@@ -113,7 +113,7 @@ author:
   vine             :
   weibo            :
   xing             :
-  youtube          : https://www.youtube.com/@rextlfung
+  youtube          : "@rextlfung"
   wikipedia        :
 
 
