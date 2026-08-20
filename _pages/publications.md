@@ -15,8 +15,12 @@ IEEE Transactions on Computational Imaging, 2026.
 [A dedicated skin-to-brain circuit for cool sensation in mice](https://doi.org/10.1038/s41467-025-61562-y) <br>
 Nature Communications, 2025.
 
-<b>Conference Abstracts</b>
+<b>Conference Posters</b>
 ======
+* <b>Rex T.L. Fung</b>, Douglas C. Noll, Jon-Fredrik Nielsen. <br>
+[ArbEPI: Generating 3D-EPI Sequences from Arbitrary 2D Sampling Patterns](https://rextlfung.github.io/posters/grc2026.pdf) <br>
+Gordon Research Conference, 2026
+
 * <b>Rex Fung</b>, Rodrigo A. Lobos, Jeffrey A. Fessler, Douglas C. Noll, Jon-Fredrik Nielsen. <br>
 [Sub 2 mm resolution fMRI at 3T using randomly undersampled 3D-EPI with locally low-rank + temporally sparse reconstruction](https://archive.ismrm.org/2025/3196.html) <br>
 International Society for Magnetic Resonance in Medicine Annual Meeting, 2025, Digital Poster #3196

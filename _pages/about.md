@@ -8,6 +8,6 @@ redirect_from:
   - /about.html
 ---
 
-[Résumé](https://rextlfung.github.io/resume/build/resume.pdf) | [GRC 2026 Poster](https://rextlfung.github.io/posters/grc2026.pdf)
+[Résumé](https://rextlfung.github.io/resume/build/resume.pdf)
 
 I'm a PhD Candidate advised by Dr. Jon-Fredrik Nielsen and Dr. Douglas Noll at the University of Michigan, Ann Arbor. My research is on random sampling and iterative image reconstruction methods for MRI. Outside of school, I'm passionate about sports and am an avid volleyball player and indoor boulderer.
