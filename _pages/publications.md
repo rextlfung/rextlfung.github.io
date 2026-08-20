@@ -17,18 +17,18 @@ Nature Communications, 2025.
 
 <b>Conference Posters</b>
 ======
-* <b>Rex T.L. Fung</b>, Douglas C. Noll, Jon-Fredrik Nielsen. <br>
-[ArbEPI: Generating 3D-EPI Sequences from Arbitrary 2D Sampling Patterns](https://rextlfung.github.io/posters/grc2026.pdf) <br>
-Gordon Research Conference, 2026
+* <b>R.T.L. Fung</b>, D.C. Noll, J.-F. Nielsen. <br>
+[ArbEPI: A Framework for Generating 3D-EPI Sequences from Arbitrary Sampling Patterns](https://rextlfung.github.io/posters/grc2026.pdf) <br>
+In Vivo Magnetic Resonance, Gordon Research Conferences, 2026, 20 minute talk and traditional poster.
 
-* <b>Rex Fung</b>, Rodrigo A. Lobos, Jeffrey A. Fessler, Douglas C. Noll, Jon-Fredrik Nielsen. <br>
-[Sub 2 mm resolution fMRI at 3T using randomly undersampled 3D-EPI with locally low-rank + temporally sparse reconstruction](https://archive.ismrm.org/2025/3196.html) <br>
-International Society for Magnetic Resonance in Medicine Annual Meeting, 2025, Digital Poster #3196
+* <b>R.T.L. Fung</b>, R.A. Lobos, J.A. Fessler, D.C. Noll, J.-F. Nielsen. <br>
+[Sub 2 mm Resolution fMRI at 3T using Randomly Undersampled 3D-EPI with Locally Low-Rank + Temporally Sparse Reconstruction](https://archive.ismrm.org/2025/3196.html) <br>
+International Society for Magnetic Resonance in Medicine Annual Meeting, 2025. Digital poster #3196.
 
-* Scott Peltier, Maximillian Egan, <b>Rex Fung</b>, Qingping Chen, Maxim Zaitsev, Jon-Fredrik Nielsen. <br>
+* S. Peltier, M. Egan, <b>R. Fung</b>, Q. Chen, M. Zaitsev, J.-F. Nielsen. <br>
 [Harmonization of an SMS-EPI fMRI protocol using Pulseq: Sequence implementation and ABCD QC metrics](https://rextlfung.github.io/posters/ohbm2024.pdf) <br>
-Organization for Human Brain Mapping Annual Meeting, 2024, Digital Poster #3804
+Organization for Human Brain Mapping Annual Meeting, 2024. Digital poster #3804.
 
-* Yongli He, <b>Rex Fung</b>, Jon-Fredrik Nielsen. <br>
+* Y. He, <b>R. Fung</b>, J.-F. Nielsen. <br>
 [High-Accuracy Ultra-short Inner-Volume Saturation Pulse for 3D Steady-State Imaging](https://archive.ismrm.org/2024/3249.html) <br>
-International Society for Magnetic Resonance in Medicine Annual Meeting & Exhibition, 2024, Digital Poster #3249
+International Society for Magnetic Resonance in Medicine Annual Meeting, 2024. Digital poster #3249.
