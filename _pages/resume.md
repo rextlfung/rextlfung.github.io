@@ -7,6 +7,6 @@ redirect_from:
   - /cv
 ---
 
-[Download PDF](https://rextlfung.github.io/resume/build/resume.pdf)
+[Download PDF](/resume/build/resume.pdf)
 
-<iframe src="https://rextlfung.github.io/resume/build/resume.pdf" style="width: 100%; height: 90vh; border: none;"></iframe>
+<iframe src="/resume/build/resume.pdf" style="width: 100%; height: 90vh; border: none;"></iframe>
