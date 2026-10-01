@@ -5,8 +5,6 @@ permalink: /teaching/
 author_profile: true
 ---
 
-{% include base_path %}
-
 <b>Graduate Student Instructor</b>
 ======
 * <b>BME/ECE 516: Medical Imaging Systems</b>, University of Michigan, Ann Arbor <br>
