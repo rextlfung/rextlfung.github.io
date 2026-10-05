@@ -306,6 +306,67 @@
       }
     }
   }
+
+  /* dropdown of child links under a top-level item */
+
+  .visible-links .masthead__menu-item--dropdown {
+    position: relative;
+
+    > a:after {
+      content: "\25BE";
+      margin-left: 0.35em;
+    }
+
+    &:hover > .masthead__dropdown,
+    &:focus-within > .masthead__dropdown {
+      display: block;
+    }
+  }
+
+  .visible-links .masthead__dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 100%;
+    padding: 5px;
+    border: 1px solid $border-color;
+    border-radius: $border-radius;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(#000, 0.25);
+
+    li {
+      display: block;
+      font-weight: normal;
+    }
+
+    li a {
+      margin: 0;
+      padding: 10px 20px;
+
+      &:hover {
+        color: $masthead-link-color-hover;
+        background: mix(#fff, $primary-color, 75%);
+      }
+
+      &:before {
+        display: none;
+      }
+    }
+  }
+
+  /* when collapsed into the hamburger menu, list children indented */
+
+  .hidden-links .masthead__dropdown {
+    li {
+      border-top: 1px solid $border-color;
+      border-bottom: none;
+    }
+
+    a {
+      padding-left: 40px;
+    }
+  }
 }
 
 

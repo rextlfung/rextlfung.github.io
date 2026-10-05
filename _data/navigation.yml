@@ -11,6 +11,11 @@ main:
 
   - title: "Personal Projects"
     url: /projects/
+    children:
+      - title: "Volleybot"
+        url: /projects/volleybot/
+      - title: "ArborEats"
+        url: /projects/arboreats/
 
   #- title: "Talks"
     #url: /talks/
