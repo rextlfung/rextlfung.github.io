@@ -13,7 +13,16 @@
               {% else %}
               {% assign domain = base_path %}
             {% endif %}
-            <li class="masthead__menu-item"><a href="{{ domain }}{{ link.url }}">{{ link.title }}</a></li>
+            <li class="masthead__menu-item{% if link.children %} masthead__menu-item--dropdown{% endif %}">
+              <a href="{{ domain }}{{ link.url }}">{{ link.title }}</a>
+              {% if link.children %}
+                <ul class="masthead__dropdown">
+                  {% for child in link.children %}
+                    <li><a href="{{ base_path }}{{ child.url }}">{{ child.title }}</a></li>
+                  {% endfor %}
+                </ul>
+              {% endif %}
+            </li>
           {% endfor %}
         </ul>
         <ul class="hidden-links hidden"></ul>
