@@ -1,0 +1,131 @@
+\documentclass{resume}
+
+\usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry}
+\usepackage[hidelinks]{hyperref}
+\usepackage{color}
+\usepackage{mathptmx}
+
+\name{Rex Tin Long Fung}
+%\address{University of Michigan, Ann Arbor}
+%\address{540 Thompson St}
+%\address{Ann Arbor, MI, 48104}
+%\address{Personal Phone: +1 (734) 340-8022}
+\address{E-mail: rexfung@umich.edu}
+\address{Website: \href{https://rextlfung.github.io/}{https://rextlfung.github.io}}
+
+\makeatletter
+\newcommand{\printheader}{
+  \printname
+  \@ifundefined{@addressone}{}{\printaddress{\@addressone}}
+  \@ifundefined{@addresstwo}{}{\printaddress{\@addresstwo}}
+  \@ifundefined{@addressthree}{}{\printaddress{\@addressthree}}
+}
+\makeatother
+
+\begin{document}
+\begin{rSection}{Education}
+\begin{rSubsection}{University of Michigan}{, Ann Arbor, MI \hfill {Sep 2022 - Sep 2027}}
+	PhD Candidate specializing in MRI acquisition design, quantitative image reconstruction, and validation of image quality and repeatability.
+\end{rSubsection}
+\begin{rSubsection}{University of Michigan}{, Ann Arbor, MI \hfill {Sep 2022 - Aug 2024}}
+	\item \textbf{Program}: MS, Biomedical Engineering (Imaging and Ultrasonics) \hfill{\textbf{GPA}: 3.65/4.00}
+    \item{\textbf{Relevant Coursework}: Image Processing, Medical Imaging Systems, Machine Learning, Optimization, Probability, Linear Algebra}
+\end{rSubsection}
+\begin{rSubsection}{University of Michigan}{, Ann Arbor, MI \hfill {Sep 2018 - May 2022}}
+	\item{\textbf{Program}: BS, Neuroscience major, Electrical Engineering minor} \hfill{\textbf{GPA}: 3.78/4.00}
+    \item{\textbf{Relevant Coursework}: Embedded Control Systems, Digital Signal Processing, Electrical Biophysics, Sensing and ML for Neural Interfaces}
+\end{rSubsection}
+\end{rSection}
+
+\begin{rSection}{Research Experience}
+    \begin{rSubsection}{Functional MRI Lab}{, University of Michigan \hfill {Sep 2022 - Present}}
+    	\item {Graduate Student Research Assistant \hfill \textit{Advisors: Dr. Jon-Fredrik Nielsen, Dr. Douglas Noll}}
+    	\begin{rSubsubsection}
+            \item Designed and validated a novel Poisson-disc 3D-EPI acquisition, accelerating fMRI by $10\times$ and enabling sub-2 mm functional imaging at 3T.
+            \item Developed a custom 4D iterative reconstruction (Julia, Python) with multiscale low-rank models, reconstructing 100 GB+ datasets on HPCs and improving activation-map accuracy.
+            \item Built open-source, hardware-agnostic Pulseq sequences used by 7+ institutions (e.g., Harvard, Freiburg), enabling reproducible acquisition across scanner vendors.
+            \item Helped harmonize an fMRI protocol across sites and scanners, assessing measurement repeatability with ABCD quality-control metrics.
+            \item Authored 1 first-author manuscript (under revision) and co-authored 1 journal article and 4 conference presentations (e.g. IEEE, ISMRM), communicating methods and results to multidisciplinary audiences.
+    	\end{rSubsubsection}
+	\end{rSubsection}
+
+    \begin{rSubsection}{Bo Duan Lab}{, University of Michigan \hfill {Jul 2020 - May 2022}}
+	\item {Undergraduate Research Assistant \hfill \textit{Advisor: Dr. Bo Duan}}
+	\begin{rSubsubsection}
+        \item Built OpenCV pipelines for cell counting in 200+ microscopy images and behavioral tracking in 30+ hours of video, cutting analysis time by 90\%.
+        \item Co-authored 1 journal article in \textit{Nature Communications}, characterizing a dedicated skin-to-brain neural circuit for cool sensation in mice.
+	\end{rSubsubsection}
+    \end{rSubsection}
+\end{rSection}
+
+\begin{rSection}{Technical Skills}
+    \textbf{Imaging}: MRI Sequence Design, Image Reconstruction, Computer Vision (OpenCV), Quantitative Analysis\\
+    \textbf{Programming}: Python, MATLAB, Julia, PyTorch/YOLOv8, GPU programming, Git/GitHub, LaTeX\\
+    \textbf{Research}: Experimental Design, Troubleshooting, Technical Documentation, Scientific Writing\\
+    \textbf{Languages}: English, Cantonese, Mandarin Chinese, Japanese
+\end{rSection}
+
+\clearpage
+\printheader
+
+\begin{rSection}{Selected Projects}
+    \begin{rSubsection}{Volleybot: Automatic Volleyball Video Editing}{ \hfill {\href{https://github.com/rextlfung/volleybot}{\underline{github.com/rextlfung/volleybot}}}}
+        \item Fine-tuned a YOLOv8 (PyTorch-based) detector on $\sim$500 labeled frames from 3 gyms, beating a pretrained YOLOv8x baseline by 17 percentage points at 6$\times$ the speed; added a frame-level live/dead-play classifier to automate rally segmentation.
+    \end{rSubsection}
+\end{rSection}
+
+\begin{rSection}{Journal Publications}
+	\begin{rJournal}
+	\item R.A. Lobos, X. Wang, \textbf{R.T.L. Fung}, Y. He, D. Frey, D. Gupta, Z. Liu, J.A. Fessler, D.C. Noll.
+    "Spatiotemporal Maps for Dynamic MRI Reconstruction.",
+    \textit{IEEE Transactions on Computational Imaging} (2026).
+    \href{https://doi.org/10.1109/tci.2026.3657289}{\underline{DOI}}.
+
+    \item H. Lee, C.C. Hor, L.R. Horwitz, A. Xiong, X.Y. Su, D.R. Soden, S. Yang, W. Cai, W. Zhang, C. Li, C. Radcliff, A. Dinh, \textbf{T.L.R. Fung}, I. Rovcanin, K.P. Pipe, X.Z.S. Xu, B. Duan.
+    "A dedicated skin-to-brain circuit for cool sensation in mice.",
+    \textit{Nature Communications} (2025).
+    \href{https://doi.org/10.1038/s41467-025-61562-y}{\underline{DOI}}.
+	\end{rJournal}
+\end{rSection}
+
+\begin{rSection}{Manuscripts Under Revision}
+	\begin{rRevision}
+	\item \textbf{R.T.L. Fung}, R.A. Lobos, J.A. Fessler, D.C. Noll, J.-F. Nielsen.
+    "ArbEPI: 3D-EPI sequences from arbitrary 2D sampling masks, with multiscale low-rank reconstruction for fMRI.",
+    \textit{Magnetic Resonance in Medicine}, under revision.
+	\end{rRevision}
+\end{rSection}
+
+\begin{rSection}{Conference Posters}
+\begin{rConference}
+    \item \textbf{R.T.L. Fung}, D.C. Noll, J.-F. Nielsen.
+    "ArbEPI: A Framework for Generating 3D-EPI Sequences from Arbitrary Sampling Patterns"
+    \textit{In Vivo Magnetic Resonance, Gordon Research Conferences}, 2026. 20 minute talk and traditional poster.
+
+    \item \textbf{R.T.L. Fung}, R.A. Lobos, J.A. Fessler, D.C. Noll, J.-F. Nielsen.
+    "\href{https://archive.ismrm.org/2025/3196.html}{Sub 2 mm Resolution fMRI at 3T using Randomly Undersampled 3D-EPI with Locally Low-Rank + Temporally Sparse Reconstruction}"
+    \textit{International Society for Magnetic Resonance in Medicine Annual Meeting}, 2025. Digital poster \#3196.
+
+    \item S. Peltier, M. Egan, \textbf{R. Fung}, Q. Chen, M. Zaitsev, J.-F. Nielsen.
+    "Harmonization of an SMS-EPI fMRI protocol using Pulseq: Sequence implementation and ABCD QC metrics."
+    \textit{Organization for Human Brain Mapping Annual Meeting}, 2024. Digital poster \#3804.
+
+    \item Y. He, \textbf{R. Fung}, J.-F. Nielsen.
+    "\href{https://archive.ismrm.org/2024/3249.html}{High-Accuracy Ultra-short Inner-Volume Saturation Pulse for 3D Steady-State Imaging.}"
+    \textit{International Society for Magnetic Resonance in Medicine Annual Meeting}, 2024. Digital poster \#3249.
+\end{rConference}
+\end{rSection}
+
+\begin{rSection}{Teaching Experience}
+    \begin{rSubsection}{BME/ECE 516 Medical Imaging Systems}{, University of Michigan \hfill {Sep 2024 - Dec 2024}}
+        \item[$\bullet$] Mentored 20-30 students in Medical Imaging Systems (MRI, ultrasound) through weekly office hours and Piazza.
+        \item[$\bullet$] Released and graded homework and the final exam on Canvas over 15 weeks.
+    \end{rSubsection}
+\end{rSection}
+
+\begin{rSection}{Honors and Awards}
+	\begin{rSubsection}{James B. Angell Scholar (``A'' record for 2+ consecutive terms)}{, University of Michigan \hfill Mar 2021}
+	\end{rSubsection}
+\end{rSection}
+
+\end{document}
