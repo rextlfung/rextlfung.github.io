@@ -15,6 +15,12 @@ IEEE Transactions on Computational Imaging, 2026.
 [A dedicated skin-to-brain circuit for cool sensation in mice](https://doi.org/10.1038/s41467-025-61562-y) <br>
 Nature Communications, 2025.
 
+<b>Manuscripts Under Revision</b>
+======
+* <b>R.T.L. Fung</b>, R.A. Lobos, J.A. Fessler, D.C. Noll, J.-F. Nielsen. <br>
+ArbEPI: 3D-EPI sequences from arbitrary 2D sampling masks, with multiscale low-rank reconstruction for fMRI <br>
+Magnetic Resonance in Medicine, under revision.
+
 <b>Conference Posters</b>
 ======
 * <b>R.T.L. Fung</b>, D.C. Noll, J.-F. Nielsen. <br>
