@@ -43,7 +43,7 @@
     	\begin{rSubsubsection}
             \item Co-designed acquisition and reconstruction for a novel randomly undersampled (Poisson-disc) 3D-EPI fMRI sensing system, achieving $10\times$ acceleration and sub-2 mm resolution, a regime where conventional acquisition fails.
             \item Developed a custom 4D iterative reconstruction in Julia and Python that models multiscale low-rank and sparse signal structure, reconstructing 100 GB+ datasets on GPUs/HPC clusters and improving the accuracy of functional activation maps.
-            \item Prototyped and ran sequences directly on research MRI scanners under real hardware constraints (gradient slew, timing, SAR, scan-time), iterating between simulation, phantom and human experiments.
+            \item Prototyped sequences on research MRI scanners under real hardware constraints (gradient slew, timing, SAR, scan time), iterating from simulation to phantom to human experiments.
             \item Built open-source, vendor-agnostic Pulseq sequences used by 7+ international institutions (e.g., Harvard, Freiburg), collaborating across physics, engineering and neuroscience groups.
     	\end{rSubsubsection}
 	\end{rSubsection}
@@ -57,19 +57,11 @@
     \end{rSubsection}
 \end{rSection}
 
-\begin{rSection}{Projects}
-    \begin{rSubsection}{Volleybot: Automatic Video Editing}{, \href{https://github.com/rextlfung/volleybot}{\underline{github.com/rextlfung/volleybot}} \hfill {Personal Project}}
-    	\begin{rSubsubsection}
-            \item Built a perception pipeline that tracks a small, fast-moving ball in fixed-camera gym video: a YOLOv8 detector fine-tuned on ~500 labeled frames from 3 gyms beat a pretrained YOLOv8x baseline by +17pp detection rate at 6$\times$ the speed.
-            \item Added a detection state machine and frame-level live/dead-play classifier to segment rallies, and automated cutting into highlight reels with ffmpeg.
-    	\end{rSubsubsection}
-	\end{rSubsection}
-\end{rSection}
-
 \begin{rSection}{Technical Skills}
     \textbf{Imaging \& Machine Learning}: Computational Imaging, Inverse Problems, Convex/Iterative Optimization, Machine Learning, Computer Vision, Signal \& Image Processing\\
     \textbf{Programming}: Python (PyTorch, NumPy, OpenCV), Julia, MATLAB, GPU programming, Unix/Linux, HPC clusters, Git/GitHub, LaTeX\\
-    \textbf{Systems \& Research}: MRI scanner hardware and pulse sequence programming, Experimental Design, Academic Writing and Presentations
+    \textbf{Systems \& Research}: MRI scanner hardware and pulse sequence programming, Experimental Design, Academic Writing and Presentations\\
+    \textbf{Languages}: English, Cantonese, Mandarin Chinese, Japanese
 \end{rSection}
 
 \clearpage
@@ -117,10 +109,16 @@
 \end{rConference}
 \end{rSection}
 
+\begin{rSection}{Projects}
+    \begin{rSubsection}{Volleybot}{, \href{https://github.com/rextlfung/volleybot}{\underline{github.com/rextlfung/volleybot}} \hfill {Personal Project}}
+            \item Built a YOLOv8 (PyTorch) ball-tracking pipeline for fixed-camera gym video, fine-tuned on $\sim$500 labeled frames to beat a pretrained YOLOv8x baseline by +17pp detection rate at 6$\times$ the speed; added a rally state machine and live/dead-play classifier to auto-cut highlight reels.
+	\end{rSubsection}
+\end{rSection}
+
 \begin{rSection}{Teaching Experience}
     \begin{rSubsection}{BME/ECE 516 Medical Imaging Systems}{, University of Michigan \hfill {Sep 2024 - Dec 2024}}
-        \item[$\bullet$] Mentored 20-30 students to learn Medical Imaging Systems e.g. MRI, ultrasound, by guiding them through homework problems during weekly office hours and via Piazza, an online Q\&A forum.
-        \item[$\bullet$] Streamlined course logistics for 15 weeks by releasing and grading homework assignments + final exam on Canvas, an online site for the class.
+        \item[$\bullet$] Mentored 20-30 students in Medical Imaging Systems (MRI, ultrasound) through weekly office hours and Piazza.
+        \item[$\bullet$] Released and graded homework and the final exam on Canvas over 15 weeks.
     \end{rSubsection}
 \end{rSection}
 
@@ -130,10 +128,5 @@
 	\end{rSubsection}
 \end{rSection}
 
-\begin{rSection}{Other Skills}
-    \textbf{Digital Media Production}: Adobe Premiere Pro/Rush, Audacity, Edits by Instagram\\
-    \textbf{Languages}: English, Cantonese, Mandarin Chinese, Japanese\\
-    \textbf{Sports}: Volleyball, Bouldering, Badminton, Pickleball, Table Tennis, Basketball, Triathlon
-\end{rSection}
 
 \end{document}
