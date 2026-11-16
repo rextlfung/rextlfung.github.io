@@ -110,6 +110,10 @@
 \end{rSection}
 
 \begin{rSection}{Projects}
+    \begin{rSubsection}{Video Compression Transformer for fMRI}{, EECS 553 Machine Learning, University of Michigan \hfill {Course Project, 2024}}
+            \item Reimplemented Google Research's Video Compression Transformer (VCT) in PyTorch with a 3-person team, a learned codec that quantizes per-frame latents and entropy-codes them using a transformer-based temporal prior; applied it to 4D fMRI time series (392 volumes of $90\times90\times60$ voxels).
+            \item Evaluated rate--distortion trade-offs (bits per pixel vs. PSNR, NRMSE, SSIM) against downsampling-plus-interpolation baselines; prepared and loaded the fMRI data and interpreted results as the team's domain expert.
+	\end{rSubsection}
     \begin{rSubsection}{Volleybot}{, \href{https://github.com/rextlfung/volleybot}{\underline{github.com/rextlfung/volleybot}} \hfill {Personal Project}}
             \item Built a YOLOv8 (PyTorch) ball-tracking pipeline for fixed-camera gym video, fine-tuned on $\sim$500 labeled frames to beat a pretrained YOLOv8x baseline by +17pp detection rate at 6$\times$ the speed; added a rally state machine and live/dead-play classifier to auto-cut highlight reels.
 	\end{rSubsection}
