@@ -1,6 +1,6 @@
 \documentclass{resume}
 
-\usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry}
+\usepackage[left=0.75in,top=0.5in,right=0.75in,bottom=0.45in]{geometry}
 \usepackage[hidelinks]{hyperref}
 \usepackage{color}
 \usepackage{mathptmx}
@@ -64,6 +64,7 @@
     \textbf{Languages}: English, Cantonese, Mandarin Chinese, Japanese
 \end{rSection}
 
+
 \clearpage
 \printheader
 
@@ -110,27 +111,25 @@
 \end{rSection}
 
 \begin{rSection}{Projects}
-    \begin{rSubsection}{Video Compression Transformer for fMRI}{, EECS 553 Machine Learning, University of Michigan \hfill {Course Project, 2024}}
-            \item Reimplemented Google Research's Video Compression Transformer (VCT) in PyTorch with a 3-person team, a learned codec that quantizes per-frame latents and entropy-codes them using a transformer-based temporal prior; applied it to 4D fMRI time series (392 volumes of $90\times90\times60$ voxels).
-            \item Evaluated rate--distortion trade-offs (bits per pixel vs. PSNR, NRMSE, SSIM) against downsampling-plus-interpolation baselines; prepared and loaded the fMRI data and interpreted results as the team's domain expert.
+    \begin{rSubsection}{Video Compression Transformer for fMRI}{, EECS 553 Machine Learning \hfill {Course Project, 2024}}
+            \item Reimplemented Google's Video Compression Transformer (learned codec, transformer temporal entropy model) in PyTorch with a 3-person team; applied it to 4D fMRI and evaluated bpp vs. PSNR/NRMSE/SSIM against downsampling baselines.
 	\end{rSubsection}
     \begin{rSubsection}{Volleybot}{, \href{https://github.com/rextlfung/volleybot}{\underline{github.com/rextlfung/volleybot}} \hfill {Personal Project}}
-            \item Built a YOLOv8 (PyTorch) ball-tracking pipeline for fixed-camera gym video, fine-tuned on $\sim$500 labeled frames to beat a pretrained YOLOv8x baseline by +17pp detection rate at 6$\times$ the speed; added a rally state machine and live/dead-play classifier to auto-cut highlight reels.
+            \item Built a YOLOv8 (PyTorch) ball-tracking pipeline for gym video, fine-tuned on $\sim$500 labeled frames to beat a pretrained YOLOv8x baseline by +17pp detection rate at 6$\times$ the speed; added a live/dead-play classifier to auto-cut highlight reels.
 	\end{rSubsection}
 \end{rSection}
 
 \begin{rSection}{Teaching Experience}
     \begin{rSubsection}{BME/ECE 516 Medical Imaging Systems}{, University of Michigan \hfill {Sep 2024 - Dec 2024}}
-        \item[$\bullet$] Mentored 20-30 students in Medical Imaging Systems (MRI, ultrasound) through weekly office hours and Piazza.
-        \item[$\bullet$] Released and graded homework and the final exam on Canvas over 15 weeks.
+        \item[$\bullet$] Mentored 20-30 students via weekly office hours; graded homework and the final exam.
     \end{rSubsection}
 \end{rSection}
 
 \begin{rSection}{Honors and Awards}
 	\begin{rSubsection}{James B. Angell Scholar}{, University of Michigan \hfill Mar 2021}
-        \item \textit{Students who achieve an “A” record (all grades of A+, A, or A-) for two or more consecutive terms}
 	\end{rSubsection}
 \end{rSection}
+
 
 
 \end{document}
