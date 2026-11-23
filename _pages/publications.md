@@ -19,8 +19,7 @@ Nature Communications, 2025.
 ======
 * <b>R.T.L. Fung</b>, R.A. Lobos, J.A. Fessler, M. Zaitsev, D.C. Noll, J.-F. Nielsen. <br>
 ArbEPI: 3D-EPI sequences from arbitrary 2D sampling masks, with multiscale low-rank reconstruction for fMRI <br>
-Magnetic Resonance in Medicine, under revision. <br>
-1st revision submitted.
+Magnetic Resonance in Medicine, 1st revision submitted.
 
 <b>Conference Posters</b>
 ======
